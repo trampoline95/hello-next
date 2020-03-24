@@ -1,7 +1,8 @@
 import {withRouter} from 'next/router'
 const Post=withRouter((props)=>{
     return (
-        <h1>Hello there</h1>
+        <h1>{props.router.query.title}</h1>
+        <p>This is dynamic content</p>
     )
 })
 
